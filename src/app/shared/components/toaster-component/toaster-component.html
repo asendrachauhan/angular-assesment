@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="left">
+    <mat-icon
+      *ngIf="data.type === 'success'; else errorIcon"
+      class="success-icon icon"
+      fontIcon="check_small"
+    ></mat-icon>
+    <p class="text">{{data.message}}</p>
+  </div>
+  <button class="action" (click)="dismiss()" matButton>{{data.action}}</button>
+
+  <ng-template #errorIcon>
+    <mat-icon class="error-icon icon" fontIcon="close_small"></mat-icon>
+  </ng-template>
+</div>

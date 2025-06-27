@@ -1,0 +1,71 @@
+.main-container {
+  height: calc(100% - 70px);
+  overflow-y: auto;
+
+  .loader {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+
+    .kpi-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 16px;
+
+      .kpi-card {
+        padding: 16px;
+        text-align: center;
+        background: #f5f7fa;
+
+        .kpi-title {
+          font-size: 14px;
+          color: #777;
+        }
+
+        .kpi-value {
+          font-size: 24px;
+          font-weight: bold;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .charts-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+
+      .chart-card {
+        padding: 16px;
+
+        .chart-title {
+          font-size: 18px;
+          font-weight: 600;
+          text-align: center;
+          margin: 12px 0 0 0;
+          color: #424242;
+        }
+
+        .chart-wrapper {
+          position: relative;
+          height: 300px;
+
+
+          canvas {
+            display: block;
+            width: 100% !important;
+            height: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}

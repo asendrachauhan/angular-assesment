@@ -1,0 +1,47 @@
+
+
+.full-width {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.container {
+    .header {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 1px #e2dddd;
+
+    .title {
+         font-size: 25px;
+         margin: 0px;
+         margin-left: 10px;
+         color: #393232;
+    }
+
+    .action {
+      color: #5a5757;
+    }
+    .status{
+       border-radius: 25px;
+    background-color: #73d589;
+    padding: 5px 10px;
+    width: 37px;
+    height: 24px;
+    font-size: 19px;
+   
+    }
+}
+
+.actions-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+ box-shadow: 0px 0px 2px 1px #e2dddd;
+ border-radius: 2px;
+}
+}
+

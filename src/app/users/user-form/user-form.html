@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="header">
+    <span *ngIf="canEdit" class="title action"
+      >{{userId ? 'Edit' : 'Add'}}</span
+    >
+    <p class="title">{{form.get('fullName')?.value || 'New User'}}</p>
+  </div>
+  <div class="body">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" style="padding: 16px">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label> FullName</mat-label>
+        <input matInput type="text" formControlName="fullName" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>UserName</mat-label>
+        <input matInput type="text" formControlName="userName" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="text" formControlName="password" />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Role</mat-label>
+        <mat-select formControlName="role">
+          <mat-option *ngFor="let r of roles" [value]="r">{{ r }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class="actions-btn">
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="form.invalid"
+        >
+          {{canEdit ? userId ? 'Update' : 'Add' : 'Close'}}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

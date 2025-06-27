@@ -1,59 +1,168 @@
-# AngularAssesment
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+# Angular Assessment App
 
-## Development server
+A modern task and project management web application built using Angular 17+, standalone components, RxJS, Angular Material, and Vite.
 
-To start a local development server, run:
+---
 
+## 📦 Features
+
+- ✅ Standalone component architecture with Vite
+- ✅ Task and Project CRUD operations
+- ✅ User management with role-based logic
+- ✅ Notifications for overdue tasks and projects
+- ✅ Snackbar system with custom `ToasterComponent`
+- ✅ Pipes for user names and due date formatting
+- ✅ Services for authentication, CRUD, search, notifications
+
+---
+
+## 🧱 Project Structure Highlights
+
+### 📁 Core Models (Interfaces)
+- `Users`: Basic user structure with role and creation date
+- `Projects`: Includes name, status, start/deadline dates, assigned user
+- `Tasks`: Tracks name, priority, due date, project linkage
+- `Notifications`: System to alert users of overdue tasks
+- `Kpis`: Used for dashboard indicators
+- `userDialogData`: Data exchange structure for user dialogs
+
+### ⚙️ Core Services
+- `AuthService`: Login, logout, token & role handling
+- `CommonService`: Shared utilities like snackbar, search, and overdue filters
+- `CronService`: Scheduled checks for overdue tasks
+- `NotificationService`: Create/read/update notifications
+- `ProjectService`, `TaskService`, `UserService`: CRUD services for respective modules
+
+### 🛠 Pipes
+- `DuedatePipe`: Displays relative due status like `2 days left` or `Today`
+- `UserNamePipe`: Resolves user names from user ID and list
+
+---
+
+## 🚀 Getting Started
+
+### Install Dependencies
 ```bash
-ng serve
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### Run the App (Dev)
 ```bash
-ng generate component component-name
+npm run dev
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+> Make sure backend (`json-server` or any mock API) is running on `http://localhost:3000`
 
+### Run JSON-server locally
 ```bash
-ng generate --help
+npm run json-server
 ```
 
-## Building
+---
 
-To build the project run:
+## 🧪 Scripts
 
+### Generate Docs (via Compodoc)
 ```bash
-ng build
+npx compodoc -p tsconfig.json
+npx compodoc -s
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Visit: `http://localhost:8080`
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📁 Key Folders
 
-```bash
-ng test
+```
+src/
+ ┣ app/
+ ┃ ┣ auth/                # Authentication logic
+ ┃ ┣ core/                # Shared models & services
+ ┃ ┣ features/            # Dashboard, tasks, projects
+ ┃ ┣ shared/              # Reusable components, pipes
+ ┣ assets/
+ ┣ environments/
 ```
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🔐 Auth Logic
 
-```bash
-ng e2e
+- Uses `localStorage` for token + user object
+- Guards implemented in routing (canActivate, canLoad, canActivateChild )
+- `AuthService` includes:
+  - `login(email, password)`
+  - `logout()`
+  - `isAuthenticated()`
+  - `getUserRole()`
+
+  ---
+
+  ## Dashboard Module
+- 
+- Dispalying total and overdue tasks card and chart
+- Dispalying total and overdue projects card and chart
+
+---
+
+ ## Projects module Module
+- Crud of project and assign users to projcet
+- By clicking on particular project row it will redirect to tasks related to that project whre you can crud of tasks;
+
+---
+
+## Tasks module Module
+- To go to task module we need to go with projects module and perform operations;
+
+---
+
+## User module Module
+- Crud of user by updating role  password username etc
+
+---
+
+
+## 🎯 Notifications System
+
+- `CronService` checks for tasks due "today" at midnight
+- Creates `Notifications` using `NotificationService`
+- Notifications are filtered per user and sorted by `createdAt`
+
+---
+
+## ✅ Custom Pipes Example
+
+```ts
+// duedate.pipe.ts
+transform(value: string | Date): string {
+  // Outputs: "2 days left", "Today", or "3 days overdue"
+}
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## 📚 Documentation
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+To view full code documentation:
+
+```bash
+npx compodoc -p tsconfig.json
+npx compodoc -s
+```
+
+Then open: [http://localhost:8080](http://localhost:8080)
+
+---
+
+## 📃 License
+
+MIT – Free to use, fork, and modify.
+
+---
+
+## 👨‍💻 Author
+
+Built by Asendra Chauhan
+_Contact via GitHub or LinkedIn_

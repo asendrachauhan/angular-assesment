@@ -1,0 +1,59 @@
+<div class="container">
+  <app-header
+    [title]="'Tasks'"
+    [filter]="true"
+    [selectedFilter]="sortField"
+    (emitFilter)="sortTasks($event)"
+    (add)="openForm()"
+  >
+  </app-header>
+
+  <div
+    class="body-content"
+    cdkDropList
+    [cdkDropListData]="filteredTasks"
+    (cdkDropListDropped)="onDrop($event)"
+    *ngIf="filteredTasks.length; else noTask"
+  >
+    <div
+      *ngFor="let task of filteredTasks trackBy: trackById"
+      class="task-card"
+      cdkDragBoundary=".body-content"
+      cdkDrag
+      [cdkDragDisabled]="filteredTasks.length === 1"
+    >
+      <div class="task-header">
+        <div class="left-header">
+          <mat-icon cdkDragHandle class="icon" matSuffix>drag_handle</mat-icon>
+          <strong>{{ task.name }}</strong>
+        </div>
+        <span class="actions">
+          <button mat-icon-button (click)="openForm(task)">
+            <mat-icon class="edit">edit</mat-icon>
+          </button>
+          <button mat-icon-button (click)="deleteTask(task.id, task.name)">
+            <mat-icon class="delete">delete</mat-icon>
+          </button>
+        </span>
+      </div>
+      <div class="task-body">
+        <p><span class="heading">Status:</span> {{ task.status }}</p>
+        <p>
+          <span class="heading">Due:</span> {{ task.dueDate | date: 'dd MMM yy'
+          }}
+        </p>
+        <p><span class="heading">Priority:</span> {{ task.priority }}</p>
+        <p><span class="heading">Description:</span> {{ task.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <ng-template #noTask>
+    <div class="no-task">
+      <span class="nt-txt">Currently no task available for this projects</span>
+      <button class="nt-btn" (click)="openForm()">
+        Add New
+      </button>
+    </div>
+  </ng-template>
+</div>

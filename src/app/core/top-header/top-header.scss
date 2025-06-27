@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 1px 0px gray;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+    padding: 4px 25px;
+
+    .left-content {
+        align-content: center;
+        font-size: 26px;
+        font-family: fantasy;
+        color: #db4e28;
+        background-color: #bdc1fd;
+        padding: 0px 5px;
+        border-radius: 5px;
+        margin: 2px;
+        box-shadow: 3px 3px 4px 0px #aeb1b1;
+    }
+
+    .right-content {
+
+        display: flex;
+        gap: 20px;
+
+        .profile {
+
+        .profile-btn {
+            padding: 0;
+        }
+
+        .avatar {
+            color: #6161fe;
+            font-size: 40px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+        }
+.logout-btn {
+        .logout-icon {
+            color: red;
+        }
+
+        .logout-text {
+            color: red;
+            font-family: sans-serif;
+        }
+    }
+
+        .view-icon {
+            color: #6161fe;
+        }
+
+        .view-text {
+            color: rgb(23, 23, 23);
+            font-family: sans-serif;
+        }
+    }
+    }
+}

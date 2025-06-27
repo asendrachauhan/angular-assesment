@@ -1,0 +1,417 @@
+{
+  "projects": [
+    {
+      "id": "3",
+      "name": "Marketing Campaign",
+      "status": "To Do",
+      "startDate": "2024-04-01",
+      "deadlineDate": "2024-05-15",
+      "description": "Launch a marketing campaign for new product line.",
+      "assignedTo": "4"
+    },
+    {
+      "id": "5",
+      "name": "SEO Optimization",
+      "status": "In Progress",
+      "startDate": "2024-07-05",
+      "deadlineDate": "2025-06-24T18:30:00.000Z",
+      "description": "Improve site SEO and Google ranking.",
+      "assignedTo": "3"
+    },
+    {
+      "id": "6",
+      "name": "Employee Portal",
+      "status": "To Do",
+      "startDate": "2024-06-10",
+      "deadlineDate": "2024-08-01",
+      "description": "Build internal portal for employee management.",
+      "assignedTo": "10"
+    },
+    {
+      "id": "10",
+      "name": "Data Migration",
+      "status": "To Do",
+      "startDate": "2024-08-01",
+      "deadlineDate": "2024-09-30",
+      "description": "Migrate legacy data to the new platform.",
+      "assignedTo": 10
+    },
+    {
+      "id": "2504",
+      "name": "xcd",
+      "startDate": "2025-06-26T21:06:02.418Z",
+      "deadlineDate": "2025-06-25T18:30:00.000Z",
+      "assignedTo": "10",
+      "status": "In Progress",
+      "description": "zzzx"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "fullName": "Asendra Chauhan",
+      "userName": "asendra",
+      "password": "admin123",
+      "creationDate": "2024-01-10",
+      "role": "Project Manager"
+    },
+    {
+      "id": "2",
+      "fullName": "Neha Sharma",
+      "userName": "neha.s",
+      "password": "pm123",
+      "creationDate": "2024-02-15",
+      "role": "Developer"
+    },
+    {
+      "id": "3",
+      "fullName": "Rajiv Mehta",
+      "userName": "rajiv.dev",
+      "password": "dev123",
+      "creationDate": "2024-03-05",
+      "role": "Developer"
+    },
+    {
+      "id": "4",
+      "fullName": "Pooja Verma",
+      "userName": "pooja.v",
+      "password": "test456",
+      "creationDate": "2024-01-20",
+      "role": "Project Manager"
+    },
+    {
+      "id": "6",
+      "fullName": "Sneha Reddy",
+      "userName": "sneha.r",
+      "password": "admin456",
+      "creationDate": "2024-04-10",
+      "role": "Developer"
+    },
+    {
+      "id": "7",
+      "fullName": "Arjun Patel",
+      "userName": "arjun.p",
+      "password": "qa789",
+      "creationDate": "2024-02-25",
+      "role": "Developer"
+    },
+    {
+      "id": "10",
+      "fullName": "Divya Kapoor",
+      "userName": "divya.k",
+      "password": "admin789",
+      "creationDate": "2024-06-01",
+      "role": "Developer"
+    },
+    {
+      "id": "4fda",
+      "fullName": "aditya",
+      "userName": "ad@ad",
+      "password": "1234",
+      "role": "Project Manager",
+      "creationDate": "2025-06-23T00:18:37.189Z"
+    },
+    {
+      "id": "76fe",
+      "fullName": "tester",
+      "userName": "tester.t",
+      "password": "1234",
+      "role": "Developer",
+      "creationDate": "2025-06-23T22:56:28.149Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "name": "Create wireframes",
+      "status": "To Do",
+      "dueDate": "2024-06-10",
+      "priority": "High",
+      "description": "Create low fidelity wireframes for redesign.",
+      "projectId": 1
+    },
+    {
+      "id": "2",
+      "name": "Build login screen",
+      "status": "In Progress",
+      "dueDate": "2024-06-20",
+      "priority": "Medium",
+      "description": "Implement login form and validation.",
+      "projectId": 2
+    },
+    {
+      "id": "3",
+      "name": "SEO keyword audit",
+      "status": "To Do",
+      "dueDate": "2024-07-05",
+      "priority": "High",
+      "description": "List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.List top-ranking keywords for content.",
+      "projectId": "5"
+    },
+    {
+      "id": "4",
+      "name": "Test API endpoints",
+      "status": "Done",
+      "dueDate": "2024-05-15",
+      "priority": "Low",
+      "description": "Ensure all APIs return expected results.",
+      "projectId": 4
+    },
+    {
+      "id": "5",
+      "name": "Create charts for dashboard",
+      "status": "In Progress",
+      "dueDate": "2024-08-01",
+      "priority": "High",
+      "description": "Use Chart.js to show key KPIs.",
+      "projectId": 8
+    },
+    {
+      "id": "6",
+      "name": "Write test cases",
+      "status": "To Do",
+      "dueDate": "2024-06-15",
+      "priority": "Medium",
+      "description": "Write unit and integration tests.",
+      "projectId": 6
+    },
+    {
+      "id": "7",
+      "name": "Design onboarding screens",
+      "status": "Completed",
+      "dueDate": "2024-04-05",
+      "priority": "Medium",
+      "description": "UI screens for client onboarding process.",
+      "projectId": 7
+    },
+    {
+      "id": "9",
+      "name": "Setup Firebase Auth",
+      "status": "Done",
+      "dueDate": "2024-07-01",
+      "priority": "High",
+      "description": "Secure login via Google & email.",
+      "projectId": 2
+    },
+    {
+      "id": "10",
+      "name": "Collect feedback responses",
+      "status": "In Progress",
+      "dueDate": "2024-06-30",
+      "priority": "Low",
+      "description": "Gather customer feedback via form links.",
+      "projectId": 9
+    },
+    {
+      "id": "d358",
+      "name": "casca",
+      "dueDate": "2025-06-18T18:30:00.000Z",
+      "status": "To Do",
+      "priority": "Low",
+      "description": "ascacs",
+      "projectId": "10"
+    },
+    {
+      "id": "f46c",
+      "name": "nhjnjgbjmhkhkhkjkhkjh",
+      "dueDate": "2025-06-27T18:30:00.000Z",
+      "status": "In Progress",
+      "priority": "Low",
+      "description": "mbmbm",
+      "projectId": "10"
+    },
+    {
+      "id": "ddee",
+      "name": "new task today",
+      "dueDate": "2025-06-24T18:30:00.000Z",
+      "status": "In Progress",
+      "priority": "High",
+      "description": "testing",
+      "projectId": "10"
+    },
+    {
+      "id": "3dfa",
+      "name": "sdcsdczc",
+      "dueDate": "2025-08-29T18:30:00.000Z",
+      "status": "To Do",
+      "priority": "Low",
+      "description": "sdcscs",
+      "projectId": "3"
+    },
+    {
+      "id": "ed2d",
+      "name": "vsdsdf",
+      "dueDate": "",
+      "status": "In Progress",
+      "priority": "Medium",
+      "description": "urgent",
+      "projectId": "3"
+    },
+    {
+      "id": "7c4c",
+      "name": "dcscsc",
+      "dueDate": "",
+      "status": "To Do",
+      "priority": "High",
+      "description": "csdcsc",
+      "projectId": "3"
+    },
+    {
+      "id": "13af",
+      "name": "ssdsd",
+      "dueDate": "2025-06-26T18:30:00.000Z",
+      "status": "Done",
+      "priority": "High",
+      "description": "dc",
+      "projectId": "5"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "userId": "1",
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project CRM Integration",
+      "projectId": null,
+      "read": true,
+      "createdAt": "2025-06-21T19:00:00Z"
+    },
+    {
+      "id": "7644",
+      "userId": "1",
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project Marketing Campaign",
+      "projectId": "3",
+      "read": true,
+      "createdAt": "2025-06-21T23:42:00.022Z"
+    },
+    {
+      "id": "3e77",
+      "userId": "1",
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project Employee Portal",
+      "projectId": "6",
+      "read": true,
+      "createdAt": "2025-06-22T00:00:42.327Z"
+    },
+    {
+      "id": "b535",
+      "userId": "1",
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project Marketing Campaign",
+      "projectId": "3",
+      "read": false,
+      "createdAt": "2025-06-22T21:28:03.092Z"
+    },
+    {
+      "id": "d2f1",
+      "userId": null,
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project Marketing Campaign",
+      "projectId": "3",
+      "read": false,
+      "createdAt": "2025-06-22T22:08:47.219Z"
+    },
+    {
+      "id": "a8c6",
+      "userId": null,
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project SEO Optimization",
+      "projectId": "5",
+      "read": true,
+      "createdAt": "2025-06-22T22:21:50.305Z"
+    },
+    {
+      "id": "2bcb",
+      "userId": null,
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project Employee Portal",
+      "projectId": "6",
+      "read": true,
+      "createdAt": "2025-06-22T22:23:09.972Z"
+    },
+    {
+      "id": "1897",
+      "userId": null,
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project Analytics Dashboard",
+      "projectId": null,
+      "read": true,
+      "createdAt": "2025-06-22T22:42:41.464Z"
+    },
+    {
+      "id": "63da",
+      "userId": null,
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project Customer Feedback System",
+      "projectId": null,
+      "read": true,
+      "createdAt": "2025-06-23T00:21:07.107Z"
+    },
+    {
+      "id": "4fdb",
+      "userId": "3",
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project SEO Optimization",
+      "projectId": "5",
+      "read": false,
+      "createdAt": "2025-06-23T20:53:12.598Z"
+    },
+    {
+      "id": "d762",
+      "userId": null,
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project Client Onboarding",
+      "projectId": null,
+      "read": true,
+      "createdAt": "2025-06-23T20:53:27.650Z"
+    },
+    {
+      "id": "7d0d",
+      "userId": null,
+      "type": "task-overdue",
+      "message": "Task sdcsd will be overdue today",
+      "projectId": "3",
+      "taskId": null,
+      "read": true,
+      "createdAt": "2025-06-23T22:16:00.089Z"
+    },
+    {
+      "id": "d4cf",
+      "userId": 10,
+      "type": "task-overdue",
+      "message": "Task new task today will be overdue today",
+      "projectId": "10",
+      "taskId": "ddee",
+      "read": true,
+      "createdAt": "2025-06-24T18:30:01.118Z"
+    },
+    {
+      "id": "98c6",
+      "userId": "10",
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project xcd",
+      "projectId": "2504",
+      "read": true,
+      "createdAt": "2025-06-26T21:06:26.849Z"
+    },
+    {
+      "id": "3e74",
+      "userId": "4",
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project Marketing Campaign",
+      "projectId": "3",
+      "read": false,
+      "createdAt": "2025-06-27T11:41:30.925Z"
+    },
+    {
+      "id": "cab0",
+      "userId": "10",
+      "type": "new-assignment",
+      "message": "You’ve been assigned to Project Employee Portal",
+      "projectId": "6",
+      "read": true,
+      "createdAt": "2025-06-27T11:44:41.259Z"
+    }
+  ]
+}

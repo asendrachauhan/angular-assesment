@@ -1,0 +1,61 @@
+.main-container {
+  height: calc(100% - 70px);
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+
+  .project-card {
+    overflow-y: auto;
+    height: 100%;
+    margin-bottom: 4px;
+    border-radius: 0;
+    background-color: #fafafa;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        margin: 0
+      }
+    }
+  }
+
+  .table-container {
+    overflow-x: auto;
+
+    table {
+      width: 100%;
+      min-width: 600px;
+
+      .no-data {
+        text-align: center;
+      }
+    }
+
+    th,
+    td {
+      padding: 8px 16px;
+      text-align: left;
+      font-family: sans-serif;
+      color: #514f4f;
+    }
+
+    th {
+      font-weight: 600;
+      color: #2a2929;
+    }
+
+    mat-icon {
+      font-size: 20px;
+    }
+
+    .edit {
+      color: #4b4bbb
+    }
+
+    .delete {
+      color: #e34545
+    }
+  }
+}

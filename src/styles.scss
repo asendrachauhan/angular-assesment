@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+
+body, html {
+  font-family: "Gill Sans", sans-serif;
+  margin: 0;    
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  font-family: inherit;
+}
+
+.success-snackbar .mdc-snackbar__surface {
+  background-color: rgb(64 195 112) !important; /* Actual background here */
+  color: white;
+}
+
+.error-snackbar .mdc-snackbar__surface {
+    background: #b84138 !important;
+    color: white;
+}
+
+

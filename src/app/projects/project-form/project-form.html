@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="header">
+  <span class="title action" >{{projectId ? 'Edit' : 'Add'}}</span><p class="title">{{form.value.name ? form.value.name : 'New Project'}}</p>
+  </div>
+  <div class="body">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" style="padding: 16px">
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" formControlName="name" />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Start Date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="startDate"/>
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Deadline</mat-label>
+        <input matInput [matDatepicker]="deadline" formControlName="deadlineDate" />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="deadline"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #deadline></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Assigned</mat-label>
+        <mat-select formControlName="assignedTo">
+          <mat-option *ngFor="let user of users" [value]="user.id"
+            >{{ user.fullName }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Status</mat-label>
+        <mat-select formControlName="status">
+          <mat-option *ngFor="let s of statuses" [value]="s"
+            >{{ s }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Description</mat-label>
+        <input matInput type="text" formControlName="description" />
+      </mat-form-field>
+
+      <div class="actions-btn">
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="form.invalid"
+        >
+          {{projectId ? 'Update' : 'Add'}}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

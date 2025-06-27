@@ -1,0 +1,79 @@
+<div class="main-container">
+  <app-header [search]="true" [title]="'UsersList'" (add)="openForm()">
+  </app-header>
+  <mat-card class="project-card">
+    <div class="table-container">
+      <table
+        mat-table
+        [dataSource]="dataSource"
+        matSort
+        class="mat-elevation-z2"
+      >
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>ID</th>
+          <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Full Name</th>
+          <td mat-cell *matCellDef="let row">{{ row.fullName || '-' }}</td>
+        </ng-container>
+
+        <!-- AssignTo -->
+        <ng-container matColumnDef="userName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>UserName</th>
+          <td mat-cell *matCellDef="let row">{{ row.userName || '-' }}</td>
+        </ng-container>
+
+        <!-- AssignTo -->
+        <ng-container matColumnDef="password">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>PassWord</th>
+          <td mat-cell *matCellDef="let row">{{ row.password || '-' }}</td>
+        </ng-container>
+
+        <!-- Start Date Column -->
+        <ng-container matColumnDef="creationDate">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>
+            Created Date
+          </th>
+          <td mat-cell *matCellDef="let row">
+            {{ row.creationDate | date: 'dd MMMM yy' }}
+          </td>
+        </ng-container>
+
+        <!-- Description -->
+        <ng-container matColumnDef="role">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Role</th>
+          <td mat-cell *matCellDef="let row">{{ row.role || '-' }}</td>
+        </ng-container>
+
+        <!-- Actions Column -->
+        <ng-container matColumnDef="actions">
+          <th mat-header-cell *matHeaderCellDef>Actions</th>
+          <td mat-cell *matCellDef="let row">
+            <button mat-icon-button color="primary" (click)="openForm(row.id)">
+              <mat-icon class="edit">edit</mat-icon>
+            </button>
+            <button mat-icon-button color="warn" (click)="onDelete(row.id)">
+              <mat-icon class="delete">delete</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        <tr class="mat-row" *matNoDataRow>
+          <td class="mat-cell no-data" [attr.colspan]="displayedColumns.length">
+            No Users Added.
+          </td>
+        </tr>
+      </table>
+      <mat-paginator
+        [pageSize]="5"
+        [pageSizeOptions]="[5, 10, 20]"
+        showFirstLastButtons
+      ></mat-paginator>
+    </div>
+  </mat-card>
+</div>

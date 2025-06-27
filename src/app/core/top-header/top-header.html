@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="left-content">
+    <span class="title">Project Mangement</span>
+  </div>
+  <div class="right-content">
+    <app-notification></app-notification>
+    <div class="profile">
+      <button class="profile-btn" matIconButton [matMenuTriggerFor]="menu">
+        <mat-icon class="avatar">account_circle</mat-icon>
+      </button>
+
+      <mat-menu #menu="matMenu">
+        <button class="logout-btn" mat-menu-item (click)="logOut()">
+          <mat-icon class="logout-icon">logout</mat-icon>
+          <span class="logout-text">Logout</span>
+        </button>
+        <button class="view-btn" mat-menu-item (click)="viewProfile()">
+          <mat-icon class="view-icon">visibility</mat-icon>
+          <span class="view-text">View profile</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" [opened]="true"  >
+<!-- Sidebar content -->
+    <div class="menu-items" >
+    
+    <div class="item" [ngClass]="{'center-icon' : isMobile  }"  routerLink="/dashboard" routerLinkActive="active"> <mat-icon>analytics</mat-icon> <span *ngIf="!isMobile">Dashboard</span></div>
+    <div class="item" [ngClass]="{'center-icon' : isMobile }"  routerLink="/projects" routerLinkActive="active"> <mat-icon>assignment</mat-icon> <span *ngIf="!isMobile">Projects</span></div>
+    <div class="item" [ngClass]="{'center-icon' : isMobile }"  routerLink="/users" routerLinkActive="active"> <mat-icon>people</mat-icon> <span *ngIf="!isMobile">Users</span></div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-top-header></app-top-header>
+    <!-- Main content -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

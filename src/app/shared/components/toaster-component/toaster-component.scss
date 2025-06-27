@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    padding: 0px;
+    height: 20px;
+    align-items: center;
+
+    .left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .icon {
+            background-color: #d6d0d0;
+            border-radius: 50%;
+
+            font-weight: 800;
+        }
+
+        .error-icon {
+            color: red;
+        }
+
+        .success-icon {
+            color: #3ed33e;
+        }
+
+    }
+
+}

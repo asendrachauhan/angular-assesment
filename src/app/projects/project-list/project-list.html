@@ -1,0 +1,82 @@
+<div class="top-container">
+<div class="main-container">
+    <app-header
+    [search]="true"
+    [title]="'ProjectList'"
+    (add)="openForm()"
+    >
+    </app-header>
+</div>
+<mat-card class="project-card">
+
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z2">
+
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>ID</th>
+        <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+      </ng-container>
+
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Project Name</th>
+        <td mat-cell *matCellDef="let row">{{ row.name || '-' }}</td>
+      </ng-container>
+
+      <!-- AssignTo -->
+      <ng-container matColumnDef="assignTo">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>AssignedTo</th>
+        <td mat-cell *matCellDef="let row">{{ row.assignedTo | userName: users }}</td>
+      </ng-container>
+
+      <!-- Status Column -->
+      <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
+        <td mat-cell *matCellDef="let row">{{ row.status || '-' }}</td>
+      </ng-container>
+
+      <!-- Start Date Column -->
+      <ng-container matColumnDef="startDate">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Start Date</th>
+        <td mat-cell *matCellDef="let row">{{ row.startDate | date: 'dd MMMM yy' }}</td>
+      </ng-container>
+
+      <!-- End Date Column -->
+      <ng-container matColumnDef="deadline">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>DeadLine</th>
+        <td mat-cell *matCellDef="let row">{{ row.status === 'Done' ? 'Completed' :  row.deadlineDate | duedate }}</td>
+      </ng-container>
+
+      <!-- Description -->
+      <ng-container matColumnDef="description">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header>Description</th>
+        <td mat-cell *matCellDef="let row">{{ row.description || '-' }}</td>
+      </ng-container>
+
+      <!-- Actions Column -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>Actions</th>
+        <td mat-cell *matCellDef="let row">
+          <button mat-icon-button (click)="openForm(row.id); $event.stopPropagation()">
+            <mat-icon class="edit">edit</mat-icon>
+          </button>
+          <button mat-icon-button  (click)="onDelete(row.id, row.name); $event.stopPropagation()">
+            <mat-icon class="delete">delete</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr class="data-row" (click)="redirectToTask(row.id)" mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      <tr class="mat-row" *matNoDataRow>
+    <td class="mat-cell no-data" [attr.colspan]="displayedColumns.length">
+      No projects available.
+    </td>
+  </tr>
+    </table>
+    <mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+  </div>
+</mat-card>
+</div>
+
